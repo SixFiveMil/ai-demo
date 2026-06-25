@@ -290,10 +290,10 @@ def run_matrix(verbose=False, category=None):
         })
 
         if verbose:
-            print(f"\n     Phase 1 (Raw):        {p1_out[:200]}{'...' if len(p1_out) > 200 else ''}")
-            print(f"\n     Phase 2 (Prompt):     {p2_out[:200]}{'...' if len(p2_out) > 200 else ''}")
-            print(f"\n     Phase 3a (GW+Raw):    {p3a_out[:200]}{'...' if len(p3a_out) > 200 else ''}")
-            print(f"\n     Phase 3b (GW+Prompt): {p3b_out[:200]}\n")
+            print(f"\n     Phase 1 (Raw):        {p1_out[:500]}{'...' if len(p1_out) > 500 else ''}")
+            print(f"\n     Phase 2 (Prompt):     {p2_out[:500]}{'...' if len(p2_out) > 500 else ''}")
+            print(f"\n     Phase 3a (GW+Raw):    {p3a_out[:500]}{'...' if len(p3a_out) > 500 else ''}")
+            print(f"\n     Phase 3b (GW+Prompt): {p3b_out[:500]}{'...' if len(p3b_out) > 500 else ''}\n")
 
     # Column widths
     col_cat = 26
@@ -391,10 +391,10 @@ def run_interactive():
         print(f"  Phase 3a (Gateway + Raw):       {p3a_status}")
         print(f"  Phase 3b (Gateway + Hardened):  {p3b_status}")
         print("─" * 65)
-        print(f"\n  Phase 1 output (first 300 chars):\n  {p1_out[:300]}{'...' if len(p1_out) > 300 else ''}")
-        print(f"\n  Phase 2 output (first 300 chars):\n  {p2_out[:300]}{'...' if len(p2_out) > 300 else ''}")
-        print(f"\n  Phase 3a result:\n  {p3a_out[:300]}")
-        print(f"\n  Phase 3b result:\n  {p3b_out[:300]}")
+        print(f"\n  Phase 1 output (first 1000 chars):\n  {p1_out[:1000]}{'...' if len(p1_out) > 1000 else ''}")
+        print(f"\n  Phase 2 output (first 1000 chars):\n  {p2_out[:1000]}{'...' if len(p2_out) > 1000 else ''}")
+        print(f"\n  Phase 3a result (first 1000 chars):\n  {p3a_out[:1000]}{'...' if len(p3a_out) > 1000 else ''}")
+        print(f"\n  Phase 3b result (first 1000 chars):\n  {p3b_out[:1000]}{'...' if len(p3b_out) > 1000 else ''}")
         print()
 
 
