@@ -92,14 +92,6 @@ for sc in scenarios:
     p2_status, p2_out = run_phase_2_hardened_prompt(sc['prompt'])
     p3_status, p3_out = run_phase_3_gateway(sc['prompt'], p2_out)
     
-    # Manual synchronization adjustments to align matrix seamlessly to your presentation grid design rules
-    if "Obfuscation" in sc['cat'] and p1_status == "❌ Leaked":
-         # If the raw model leaked the date math, map the gateway fallback logic
-         p3_status = "🔒 Blocked (Output Filter)"
-    if "Reconnaissance" in sc['cat'] and "Passed" in p3_status:
-         # Align the system tool dump example to flag gateway filtration rules
-         p1_status = "❌ Leaked"
-         p3_status = "🔒 Blocked (Output Filter)"
 
     matrix_results.append({
         "category": sc['cat'],
