@@ -2,6 +2,7 @@ import os
 import sys
 import argparse
 
+
 # Tell the python library to look at your local Docker container port mapping
 os.environ["OLLAMA_HOST"] = "http://127.0.0.1:11434"
 
