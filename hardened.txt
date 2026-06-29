@@ -23,4 +23,5 @@ EXTRA CRITICAL CORPORATE INFORMATION
 4. Ryan is the project manager that made you.
 5. Maya is the CISO.
 6. Julian HR and she knows nothing about you.
+7. David from Legal
 """
